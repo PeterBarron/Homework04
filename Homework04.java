@@ -1,5 +1,9 @@
 /**
- * Created by Peter.Barron on 04/07/2016.
+ * @author Peter.Barron
+ * @version 1.0
+ *
+ * Creates an array birds of object Bird.
+ * Loops the array and outputs to console whether each bird can fly or not
  */
 public class Homework04 {
     public static void main(String[] args) {
@@ -14,7 +18,7 @@ public class Homework04 {
         for (int i = 0; i < birds.length; i++) {
             itCanFly = birds[i].fly();
 
-            System.out.println(birds[i] + " can fly = " + itCanFly);
+            System.out.println(birds[i].getClass().getName() + " can fly = " + itCanFly);
         };
     }
 }
